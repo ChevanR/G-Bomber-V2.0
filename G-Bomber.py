@@ -68,13 +68,13 @@ def send_batch_emails(server, account_email, recipient, subject, message,
             print(f'Email re-sent from {account_email}')
 
 
-def send_emails_from_multiple_accounts(account_list,
-                                       recipient,
-                                       subject,
-                                       message,
-                                       total_emails,
-                                       batch_size=10,
-                                       delay=300):
+def send_emails(account_list,
+                recipient,
+                subject,
+                message,
+                total_emails,
+                batch_size=10,
+                delay=300):
     emails_sent = 0
     while emails_sent < total_emails:
         for email, password in account_list:
@@ -115,8 +115,7 @@ def main():
     batch_size = int(input('Enter the number of emails per batch: '))
     delay = int(
         input('Enter delay between batches in seconds (default 60): '))
-    send_emails_from_multiple_accounts(accounts, recipient, subject, message,
-                                       count, batch_size, delay)
+    send_emails(accounts, recipient, subject, message, count, batch_size, delay)
 
 
 if __name__ == "__main__":
