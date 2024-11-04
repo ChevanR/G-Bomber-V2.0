@@ -8,7 +8,7 @@ This software is provided "as is", without warranty of any kind, express or impl
 Before you begin, make sure you have the following:
 - Python 3.x: Installed on your system. You can download it from [Python's official website](https://www.python.org/downloads/).
 - Internet Connection: Required to send emails via SMTP.
-- Valid SMTP Server Credentials: You will need access to an SMTP server and valid credentials (username and password) that will allow you to send emails.
+- Valid Gmail Credentials: You will need access to an SMTP server and valid credentials (email and password) that will allow you to send emails.
 
 ### Installing the Script
 1. Clone the Repository: Download the script to your local machine by cloning the repository or directly downloading the source code.
@@ -16,15 +16,15 @@ Before you begin, make sure you have the following:
 git clone https://github.com/chevanr/g-bomber.git cd g-bomber
 
 
-2. Configure SMTP Accounts:
+2. Configure Google Accounts:
 - Create a text file named `accounts.txt` in the same directory as the script.
-- Format the file with your SMTP credentials as follows:
+- Format the file with your credentials as follows:
 
   your-email@example.com:password
   
   second-email@example.com:secondpassword
 
-- Each line represents one SMTP account. Make sure there are no extra spaces or lines.
+- Each line represents one account. Make sure there are no extra spaces or lines.
 
 ### Running the Script
 To run the script, open the command prompt, cd to the script's directory, and execute:
@@ -35,7 +35,7 @@ Follow the on-screen prompts to specify the recipient's email address, subject, 
 
 ## Configuration Tips
 - SMTP Settings: Depending on your email provider, you might need to configure additional SMTP settings such as the server address and port. This script assumes defaults that are common for many services but check your provider's documentation.
-- Security Settings: If using Gmail, you may need to set up an "App Password" if you have two-factor authentication enabled.
+- Security Settings: You may need to set up an "App Password" if you have two-factor authentication enabled.
 
 ## Troubleshooting
 - SMTP Connection Issues: If you encounter errors related to SMTP connections, ensure your credentials are correct and that your email provider hasn’t blocked your IP or requires additional security measures.
