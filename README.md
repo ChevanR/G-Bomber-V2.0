@@ -24,7 +24,7 @@ git clone https://github.com/chevanr/g-bomber.git cd g-bomber
   
   second-email@example.com:secondpassword
 
-- Each line represents one SMTP account. Ensure there are no extra spaces or lines.
+- Each line represents one SMTP account. Make sure there are no extra spaces or lines.
 
 ### Running the Script
 To run the script, open the command prompt, cd to the script's directory, and execute:
