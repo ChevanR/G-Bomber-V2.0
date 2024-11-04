@@ -21,6 +21,7 @@ git clone https://github.com/chevanr/g-bomber.git cd g-bomber
 - Format the file with your SMTP credentials as follows:
 
   your-email@example.com:password
+  
   second-email@example.com:secondpassword
 
 - Each line represents one SMTP account. Ensure there are no extra spaces or lines.
